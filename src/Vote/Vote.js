@@ -9,9 +9,9 @@ class Vote extends React.Component {
         const  songs  = this.props.songs.map((songs, name,title,artist) =>
             <h1 clasName>
                 <ul>
-                <li>Name:{songs.name}</li>
-                <li>Title:{songs.title}</li>
-                <li>Artist:{songs.artist}</li>
+                <li>Name: {songs.name.toUpperCase()}</li>
+                <li>Title: {songs.title.toUpperCase()}</li>
+                <li>Artist: {songs.artist.toUpperCase()}</li>
                 </ul>
                 </h1>)
         console.log(this.props.songs)

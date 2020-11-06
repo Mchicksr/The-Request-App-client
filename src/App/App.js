@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Route } from 'react-router-dom'
+import { Route,BrowserRouter } from 'react-router-dom'
 
 import './App.css'
 import config from '../config'
@@ -9,6 +9,7 @@ import Form from '../Form/Form '
 import Vote from '../Vote/Vote'
 import Review from '../Review/Review'
 import ReviewSent from '../Review/Review-Sent'
+import SplashPage from '../splash/splash'
 // import Store from '../Store/Store'
 
 class App extends Component {
@@ -46,8 +47,11 @@ addSong(song) {
   return (
 
     <main className='App'>
-      <Route path ='/' component={Main} /> 
-  <Route path ='/Form' render={()=> <Form songs={this.state.songs}/> } />
+      
+        <Route path ='/' component={Main} /> 
+    
+      <Route path='/S' component={SplashPage} />
+      <Route path ='/Form' render={()=> <Form songs={this.state.songs}/> } />
      <Route path ='/sent' component={Sent} />
      <Route path ='/vote' render={()=>< Vote songs={this.state.songs}/>} />
      <Route path = '/Review' component={Review} />

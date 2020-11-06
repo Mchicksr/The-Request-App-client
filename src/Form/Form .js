@@ -4,14 +4,24 @@ import'./form.css'
 
 export default class Form extends Component {
     ///state ///constructor ///super props ///name:name ///collect info for form
+    static defaultProps = {
+        history: {
+          goBack: () => { }
+        },
+        match: {
+          params: {}
+        }
+      }
     constructor(props) {
         super(props);
         this.state = {
             name:" ",
             title:" ",
             artist:" ",
-            comment:" "
+            comment:" ",
+    
         }
+        
     }
     nameChanged(name) {
         this.setState({
@@ -42,7 +52,7 @@ export default class Form extends Component {
         event.preventDefault()
          const { name, title, artist, comment } = this.state;
          const newSong = { name, title, artist, comment }
-         console.log(newSong)
+        //  console.log(newSong)
         const url = 'https://mighty-temple-37477.herokuapp.com/api/songs'
         const options ={
             method: 'POST',
@@ -55,20 +65,25 @@ export default class Form extends Component {
 
         fetch(url,options)
         .then(res => {
-            console.log(res)
+            // console.log(res)
             if(!res.ok) {
                 throw new Error('something went wrong please try again')
             }
             return res.json()
         })
         .then(newSong => {
+            
+
             this.setState({
                 name:" ",
                 title:" ",
                 artist:" ",
                 comment:" "
             })
+            
             this.props.handleAdd(newSong)
+             this.props.history.push('/vote')
+             
         })
         .catch(err => {
             this.setState({
@@ -144,7 +159,7 @@ return (
         </textarea>
         <br></br>
         
-        <button to ="Sent" type='submit' class ="req">Send Request </button>
+        <button to ="Sent" type='submit' className ="req">Send Request </button>
     
     </form>
     
