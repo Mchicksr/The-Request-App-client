@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Route,BrowserRouter } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 
 import './App.css'
 import config from '../config'
@@ -18,18 +18,18 @@ class App extends Component {
     
   }
 componentDidMount(){
-  console.log(config.API_ENDPOINT)
+  // console.log(config.API_ENDPOINT)
     fetch(`${config.API_ENDPOINT}/songs`)
   
   .then((res)=>{
-    console.log(res)
+    // console.log(res)
     if(!res.ok){
     return res.json().then(e=> Promise.reject(e))
     }
     return res.json()
 })
 .then((res)=>{
-  console.log(res)
+  console.log("check",res)
   this.setState({songs:res})
 })
 .catch(error=>{
@@ -42,6 +42,20 @@ voteHandler
 addSong(song) {
   
 }
+
+// ValidateSong(Name, value){
+// if(value.trim() === ''){
+//   return `${Name} is required`
+// }
+// return null
+// }
+
+//   validate(){
+//   name: name => this.ValidateSong('name', name),
+
+// }
+
+
   render(){
     
   return (
