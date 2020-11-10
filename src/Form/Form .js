@@ -115,12 +115,12 @@ return (
 
         <label name ="name">Name</label><br></br>
         <input 
-        required
+        
         type="text" 
         id="name" 
         name="name" 
         value={this.state.name} 
-        onChange={e => this.nameChanged} 
+        onChange={e => this.nameChanged(e)} 
         placeholder="NAME">
         </input><br></br>
 
@@ -154,7 +154,7 @@ return (
         <br></br>
         
         <button  
-        disabled={!this.state.name}
+        disabled={(!this.state.name.trim ===" ")}
         type='submit' 
         className ="req" >
         Send Request 
