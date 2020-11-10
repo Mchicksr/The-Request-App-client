@@ -12,22 +12,18 @@ class Form extends Component {
             title:" ",
             artist:" ",
             comment:" ",
-            errors :{
-                name:" ",
-                title:" ",
-                artist:" ",
-            }
+            value: ' '
     
         }
         
     }
-    nameChanged(name) {
+    nameChanged(e) {
         // debugger
-        if(!name){
-            return "must not be blank"
-        }
+        // if(!name){
+        //     return "must not be blank"
+        // }
         this.setState({
-            name
+            name: e.target.value
         })
     }
 
@@ -56,6 +52,7 @@ class Form extends Component {
         event.preventDefault()
          const { name, title, artist, comment } = this.state;
          const newSong = { name, title, artist, comment }
+        //  this.setState({})
         //  console.log(newSong)
         const url = 'https://mighty-temple-37477.herokuapp.com/api/songs'
         const options ={
@@ -123,7 +120,7 @@ return (
         id="name" 
         name="name" 
         value={this.state.name} 
-        onChange={e => this.nameChanged(e.target.value)} 
+        onChange={e => this.nameChanged} 
         placeholder="NAME">
         </input><br></br>
 
@@ -157,6 +154,7 @@ return (
         <br></br>
         
         <button  
+        disabled={!this.state.name}
         type='submit' 
         className ="req" >
         Send Request 
