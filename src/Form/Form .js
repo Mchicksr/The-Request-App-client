@@ -8,10 +8,10 @@ class Form extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name:" ",
-            title:" ",
-            artist:" ",
-            comment:" ",
+            name:null,
+            title:null,
+            artist:null,
+            comment:null,
             value: ' '
     
         }
@@ -115,13 +115,13 @@ return (
 
         <label name ="name">Name</label><br></br>
         <input 
-        
+        required
         type="text" 
         id="name" 
         name="name" 
         value={this.state.name} 
         onChange={e => this.nameChanged(e)} 
-        placeholder="NAME">
+        placeholder="Name">
         </input><br></br>
 
         <label name ="title">Song Title</label><br></br>
@@ -154,7 +154,7 @@ return (
         <br></br>
         
         <button  
-        disabled={(!this.state.name.trim ===" ")}
+        disabled={!this.state.name && !this.state.title}
         type='submit' 
         className ="req" >
         Send Request 
