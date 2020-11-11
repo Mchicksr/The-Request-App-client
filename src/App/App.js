@@ -37,7 +37,6 @@ console.log(error)
 })
 }
 
-voteHandler 
 
 addSong(song) {
   
@@ -57,7 +56,9 @@ addSong(song) {
 
 
   render(){
-    
+    console.log('TEST2', this.state.songs)
+    console.log('init2')
+
   return (
 
     <main className='App'>
