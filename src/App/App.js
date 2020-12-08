@@ -22,7 +22,7 @@ componentDidMount(){
     fetch(`${config.API_ENDPOINT}/songs`)
   
   .then((res)=>{
-    // console.log(res)
+    // console.log(res)   
     if(!res.ok){
     return res.json().then(e=> Promise.reject(e))
     }
@@ -33,7 +33,7 @@ componentDidMount(){
   this.setState({songs:res})
 })
 .catch(error=>{
-console.log(error)
+// console.log(error)
 })
 }
 
@@ -56,8 +56,10 @@ addSong(song) {
 
 
   render(){
-    console.log('TEST2', this.state.songs)
-    console.log('init2')
+    // console.log('TEST2', this.state.songs)
+    console.log('TEST2', this.state.params)
+
+    // console.log('init2') 
 
   return (
 

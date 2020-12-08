@@ -105,7 +105,7 @@ class Form extends Component {
     
    
     render(){
-
+        console.log('please',this.state)
 return (
     <form
     onSubmit={e => this.handleSubmit(e)}
