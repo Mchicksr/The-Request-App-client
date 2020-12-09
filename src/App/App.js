@@ -29,7 +29,7 @@ componentDidMount(){
     return res.json()
 })
 .then((res)=>{
-  console.log("check",res)
+  // console.log("check",res)
   this.setState({songs:res})
 })
 .catch(error=>{
@@ -57,7 +57,7 @@ addSong(song) {
 
   render(){
     // console.log('TEST2', this.state.songs)
-    console.log('TEST2', this.state.params)
+    // console.log('TEST2', this.state.params)
 
     // console.log('init2') 
 
@@ -83,12 +83,12 @@ addSong(song) {
 export default App;
 
 //  {/* <a href = "../form/reqeust-form.html"></a> */}
-//  <button class ="req">Send Request</button> 
+//  <button NAme ="req">Send Request</button> 
 //  {/* </a><br></br> */}
 //  {/* <a href="../vote/vote.html"> */}
-//    <button class ="req">Vote Best Choices</button> 
+//    <button className ="req">Vote Best Choices</button> 
 //  {/* </a><br></br> */}
 //  {/* <a href="../review/review-form.html"> */}
-// <button class ="req">Give a DJ Review</button> 
+// <button className ="req">Give a DJ Review</button> 
 // {/* </a><br></br> */}
 

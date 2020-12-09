@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Vote from '../Vote/Vote';
-import {useHistory} from 'react-router-dom'
+// import Vote from '../Vote/Vote';
+// import {useHistory} from 'react-router-dom'
 import'./form.css'
 
 class Form extends Component {
@@ -8,10 +8,10 @@ class Form extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name:null,
-            title:null,
-            artist:null,
-            comment:null,
+            name:' ',
+            title:' ',
+            artist:' ',
+            comment:' ',
             value: ' '
     
         }
@@ -105,12 +105,12 @@ class Form extends Component {
     
    
     render(){
-        console.log('please',this.state)
+        // console.log('please',this.state)
 return (
     <form
     onSubmit={e => this.handleSubmit(e)}
     >
-            <h1 class="neon">REQUEST APP</h1>
+            <h1 className="neon">REQUEST APP</h1>
             <h2>How would you like to party</h2>
 
         <label name ="name">Name</label><br></br>
@@ -127,7 +127,7 @@ return (
         <label name ="title">Song Title</label><br></br>
         <input 
         type="text" 
-        class="title" 
+        className="title" 
         name="title"  
         value={this.state.title} 
         onChange={e => this.titleChanged(e.target.value)} 
@@ -137,7 +137,7 @@ return (
         <label name ="artist">Artist</label><br></br>
         <input 
         type="text" 
-        class="artist" 
+        className="artist" 
         name="artist"  
         value={this.state.artist}
         onChange={e => this.artistChanged(e.target.value)} 

@@ -136,7 +136,7 @@ export default Vote;
 
 
 
-{/* <div className="FavSong">
+/* <div className="FavSong">
 {
     this.state.FavSong.map((songV,i)=>
     <div key={i} className= "song">
@@ -151,7 +151,7 @@ export default Vote;
     
     )
 }
-</div> */}
+</div> */
 
 // map through props
 // implement vote function inside of 

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom' 
+// import { Link } from 'react-router-dom' 
 import './Review.css'
 
 class Review extends Component{
@@ -58,7 +58,7 @@ class Review extends Component{
     render(){
     return(
         <div>
-        <h1 class="neon">Review</h1>
+        <h1 className="neon">Review</h1>
     <h2>How was your expreience?</h2>
     <form
     onSubmit={e => this.handleSubmit(e)} >

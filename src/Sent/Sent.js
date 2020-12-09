@@ -7,10 +7,10 @@ function Sent(){
 
     return(
     <div>
-        <h1 class="neon">THANK YOU!</h1><br></br>
-        <h1 class="neon">THE DJ HAS YOUR REQUEST!</h1> 
-        <Link to="Vote" class = "req">Post Request</Link>
-        <Link to="Vote" class ="req">Vote</Link>
+        <h1 className="neon">THANK YOU!</h1><br></br>
+        <h1 className="neon">THE DJ HAS YOUR REQUEST!</h1> 
+        <Link to="Vote" className = "req">Post Request</Link>
+        <Link to="Vote" className ="req">Vote</Link>
     </div>
     )
 
