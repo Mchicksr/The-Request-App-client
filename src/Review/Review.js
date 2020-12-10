@@ -7,7 +7,7 @@ class Review extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            review:" "
+            review:""
         }
     }
     reviewChanged(e) {
@@ -70,6 +70,7 @@ class Review extends Component{
         </textarea><br></br>
         {/* <Link to="Review-Sent" class="req">Send Review</Link> */}
         <button  
+        disabled={!this.state.review }
         type='submit'
         className= "req" >
             Send Review
