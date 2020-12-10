@@ -8,10 +8,10 @@ class Form extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name:' ',
-            title:' ',
-            artist:' ',
-            comment:' ',
+            name:null,
+            title:null,
+            artist:null,
+            comment:null,
             value: ' '
     
         }
