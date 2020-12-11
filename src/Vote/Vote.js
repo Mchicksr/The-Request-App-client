@@ -5,16 +5,21 @@ import './Vote.css'
 
 class Vote extends React.Component {
     
-    
+   
     render(){
        
+        const capitalize = (str) =>{
+            if(str)
+            return str.charAt(0).toUpperCase() + str.slice(1)
+            // return str.toUpperCase()
+        } 
 
         const  songs  = this.props.songs.map((songs, name,title,artist) =>
             
                 <ul>
-                    <li key={name} >Name: {songs.name.toUpperCase()}</li>
-                    <li key={title}>Title: {songs.title.toUpperCase()}</li>
-                    <li key={artist}>Artist: {songs.artist.toUpperCase()}</li>
+                    <li key={name} >Name: {capitalize(songs.name)}</li>
+                    <li key={title}>Title: {capitalize(songs.title)}</li>
+                    <li key={artist}>Artist: {capitalize(songs.artist)}</li>
                     <Counter />
                     
                 </ul>
