@@ -67,7 +67,7 @@ addSong(song) {
       
         <Route path ='/' component={Main} /> 
     
-      <Route path='/S' component={SplashPage} />
+      <Route exact path='/' component={SplashPage} />
       <Route path ='/Form' render={()=> <Form songs={this.state.songs}/> } />
      <Route path ='/sent' component={Sent} />
      <Route path ='/vote' render={()=>< Vote songs={this.state.songs}/>} />

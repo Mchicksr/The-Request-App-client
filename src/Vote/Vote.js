@@ -31,7 +31,10 @@ class Vote extends React.Component {
         
     return(
        
+
         <div>
+             <p>Check out what songs your fellow party-goers have submitted and vote your favorite ones as many times as you want! You can even vote for your own submission! The song with the highest votes may be the one that is played next!</p>
+             
             <h1 className="neon">VOTE</h1><br></br>
             <h1 className="songs">{songs}</h1>
             

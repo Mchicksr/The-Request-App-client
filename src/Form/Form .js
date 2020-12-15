@@ -107,6 +107,8 @@ class Form extends Component {
     render(){
         // console.log('please',this.state)
 return (
+    <div>
+        <p>Request a song and a shoutout all in one place! Fill out the form below with the information about the song you would like to hear, and in the notes section leave your shoutout! Your song will post on the Vote Best Choices page and your notes will be privately sent to the DJ.</p>
     <form
     onSubmit={e => this.handleSubmit(e)}
     >
@@ -161,7 +163,7 @@ return (
         </button>
     
     </form>
-    
+    </div>   
 )
     }
 }
