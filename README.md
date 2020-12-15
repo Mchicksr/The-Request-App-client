@@ -2,7 +2,7 @@
     This project was made with react and node.js
      -tested with jest and enzyme
 # Live link
-    request-app-client.vercel.app/
+    request-app-client-gxjlqmfro.vercel.app
 Link to github
     https://github.com/Mchicksr/The-Request-App-client
 - Scripts
