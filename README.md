@@ -2,7 +2,7 @@
     This project was made with react and node.js
      -tested with jest and enzyme
 # Live link
-    request-app-client.vercel.app/
+    request-app-client-gxjlqmfro.vercel.app
 Link to github
     https://github.com/Mchicksr/The-Request-App-client
 - Scripts
@@ -41,6 +41,7 @@ all components are held in src
             - In the review component you can post a review for the DJ. similar to the comment section this is only held for those who can pull the data in postman or can check the data in the database for privacy reasons.
 
         - Summary
+<<<<<<< HEAD
            The Request App makes your job as a DJ easy and simple. No matter what event, partygoers can download this app and send in their song requests. It is as easy as 1, 2, 3!
 
 Download the application.
@@ -50,3 +51,6 @@ Press submit!
 Users also have the option to vote on songs that have already been submitted by pressing the Vote Best Choices button and clicking on any of the songs listed. Users can vote multiple times They can leave their DJ a review by pressing the Send A Review Button.
 
 This app is a comprehensive way for party attendees to submit their song requests and to help the DJ keep the party fun and personalized. 
+=======
+            this app is for me as a DJ to be able to take requests from my event guests. While also getting feedback on the most popular songs of the moment voted on by the guests themselves. All to assure that it will be a fun successful event
+>>>>>>> 14362700ceb4604d0799361ca590ce8c61c7a3c6
