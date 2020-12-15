@@ -16,7 +16,7 @@ it('renders without crashingV,',()=>{
 
 
     it("matches snapshot main", () => {
-        // const tree = renderer.create(<Button label="click me please"></Button>).toJSON();
+
           const tree = renderer.create(  <a class="req" href="/Main"> Send Request </a>).toJSON();
       
         expect(tree).toMatchSnapshot();

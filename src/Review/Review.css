@@ -19,7 +19,6 @@ body{
     background-color: #9524b898;
     border: none;
     color: white;
-    /* padding: 30px 150px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -27,7 +26,7 @@ body{
     margin: 4px 2px;
     cursor: pointer;
     font-family: 'Shrikhand', cursive;
-    /* font-size: 32px; */
+    
 
 }
 
@@ -35,7 +34,6 @@ body{
     background-color: #9524b898;
     border: none;
     color: white;
-    /* padding: 30px 150px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -43,7 +41,6 @@ body{
     margin: 4px 2px;
     cursor: pointer;
     font-family: 'Shrikhand', cursive;
-    /* font-size: 32px; */
 
 }
 
@@ -51,7 +48,6 @@ body{
     background-color: #9524b898;
     border: none;
     color: white;
-    /* padding: 30px 150px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;

@@ -68,7 +68,6 @@ class Review extends Component{
         onChange={e => this.reviewChanged(e)}
         placeholder="comment">
         </textarea><br></br>
-        {/* <Link to="Review-Sent" class="req">Send Review</Link> */}
         <button  
         disabled={!this.state.review }
         type='submit'

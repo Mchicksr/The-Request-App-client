@@ -52,8 +52,7 @@ class Form extends Component {
         event.preventDefault()
          const { name, title, artist, comment } = this.state;
          const newSong = { name, title, artist, comment }
-        //  this.setState({})
-        //  console.log(newSong)
+       
         const url = 'https://mighty-temple-37477.herokuapp.com/api/songs'
         const options ={
             method: 'POST',
@@ -66,14 +65,14 @@ class Form extends Component {
 
         fetch(url,options)
         .then(res => {
-            // console.log(res)
+            
             if(!res.ok) {
                 throw new Error('something went wrong please try again')
             }
             return res.json()
         })
         .then(newSong => {
-            // console.log("het",this.props.history)
+           
 
             this.setState({
                 name:" ",
@@ -83,7 +82,7 @@ class Form extends Component {
             })
             this.props.handleADD(newSong) 
            
-            //  this.props.history.push('/vote')
+          
         })
         .catch(err => {
             this.setState({
@@ -97,7 +96,7 @@ class Form extends Component {
     }
 
     onSubmit(e){
-        // console.log('hey')
+        
         e.preventDefault()
        
 
@@ -105,7 +104,7 @@ class Form extends Component {
     
    
     render(){
-        // console.log('please',this.state)
+       
 return (
     <div>
         <p>Request a song and a shoutout all in one place! Fill out the form below with the information about the song you would like to hear, and in the notes section leave your shoutout! Your song will post on the Vote Best Choices page and your notes will be privately sent to the DJ.</p>
@@ -171,5 +170,3 @@ return (
 export default Form;
 
 
-//Do a validation check for every key stroke
-////Do a validation check for submit!

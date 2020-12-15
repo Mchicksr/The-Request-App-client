@@ -10,7 +10,7 @@ import Vote from '../Vote/Vote'
 import Review from '../Review/Review'
 import ReviewSent from '../Review/Review-Sent'
 import SplashPage from '../splash/splash'
-// import Store from '../Store/Store'
+
 
 class App extends Component {
   state ={
@@ -18,22 +18,22 @@ class App extends Component {
     
   }
 componentDidMount(){
-  // console.log(config.API_ENDPOINT)
+  
     fetch(`${config.API_ENDPOINT}/songs`)
   
   .then((res)=>{
-    // console.log(res)   
+      
     if(!res.ok){
     return res.json().then(e=> Promise.reject(e))
     }
     return res.json()
 })
 .then((res)=>{
-  // console.log("check",res)
+  
   this.setState({songs:res})
 })
 .catch(error=>{
-// console.log(error)
+
 })
 }
 
@@ -42,24 +42,11 @@ addSong(song) {
   
 }
 
-// ValidateSong(Name, value){
-// if(value.trim() === ''){
-//   return `${Name} is required`
-// }
-// return null
-// }
 
-//   validate(){
-//   name: name => this.ValidateSong('name', name),
-
-// }
 
 
   render(){
-    // console.log('TEST2', this.state.songs)
-    // console.log('TEST2', this.state.params)
-
-    // console.log('init2') 
+   
 
   return (
 
@@ -82,13 +69,4 @@ addSong(song) {
 
 export default App;
 
-//  {/* <a href = "../form/reqeust-form.html"></a> */}
-//  <button NAme ="req">Send Request</button> 
-//  {/* </a><br></br> */}
-//  {/* <a href="../vote/vote.html"> */}
-//    <button className ="req">Vote Best Choices</button> 
-//  {/* </a><br></br> */}
-//  {/* <a href="../review/review-form.html"> */}
-// <button className ="req">Give a DJ Review</button> 
-// {/* </a><br></br> */}
 
