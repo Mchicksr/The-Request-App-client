@@ -4,7 +4,7 @@
 # Live link
     request-app-client-gxjlqmfro.vercel.app
 Link to github
-    https://github.com/Mchicksr/The-Request-App-client
+    https://request-app-client.mchicksr.vercel.app/
 - Scripts
     -npm start
     -npm test
