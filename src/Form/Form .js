@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-// import Vote from '../Vote/Vote';
-// import {useHistory} from 'react-router-dom'
 import'./form.css'
 
 class Form extends Component {
@@ -18,10 +16,7 @@ class Form extends Component {
         
     }
     nameChanged(e) {
-        // debugger
-        // if(!name){
-        //     return "must not be blank"
-        // }
+       
         this.setState({
             name: e.target.value
         })

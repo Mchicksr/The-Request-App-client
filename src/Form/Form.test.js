@@ -19,11 +19,8 @@ it("renders form inputs", ()=>{
 })
 
 it("matches snapshot 2", () => {
-    // const tree = renderer.create(<Button label="click me please"></Button>).toJSON();
+   
       const tree = renderer.create(  <a class="req" href="/Form"> Send Request </a>).toJSON();
   
     expect(tree).toMatchSnapshot();
   })
-// describe('Form', ()=>{
-//     it("renders form inputs", ())
-// })
