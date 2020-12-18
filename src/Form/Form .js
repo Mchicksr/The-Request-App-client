@@ -109,7 +109,7 @@ return (
             <h1 className="neon">REQUEST APP</h1>
             <h2>How would you like to party</h2>
 
-        <label name ="name">Name</label><br></br>
+        <label for="name">Name</label><br></br>
         <input 
         required
         type="text" 
@@ -120,7 +120,7 @@ return (
         placeholder="Name">
         </input><br></br>
 
-        <label name ="title">Song Title</label><br></br>
+        <label for="title">Song Title</label><br></br>
         <input 
         type="text" 
         className="title" 
@@ -130,7 +130,7 @@ return (
         placeholder="Song Title">
         </input><br></br>
 
-        <label name ="artist">Artist</label><br></br>
+        <label for="artist">Artist</label><br></br>
         <input 
         type="text" 
         className="artist" 
@@ -139,7 +139,7 @@ return (
         onChange={e => this.artistChanged(e.target.value)} 
         placeholder="Artist Name"></input><br></br>
         
-        <label name ="comment">comment</label><br></br>
+        <label for="comment">comment</label><br></br>
         <textarea 
         placeholder="comment"
         name="comment"

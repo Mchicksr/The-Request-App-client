@@ -63,7 +63,7 @@ class Review extends Component{
     <form
     
     onSubmit={e => this.handleSubmit(e)} >
-         <label name ="review">Review</label><br></br>
+         <label for="review">Review</label><br></br>
         <textarea 
         
         value={this.state.review}
